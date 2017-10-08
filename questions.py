@@ -88,11 +88,3 @@ print_query_results(query1_result)
 print_query_results(query2_result)
 print_error_query_results(query3_result)
 
-orig = sys.stdout
-with open("questions.txt", "wb") as f:
-    sys.stdout = f
-    try:
-        execfile("file.py", {})
-    finally:
-        sys.stdout = orig
-
