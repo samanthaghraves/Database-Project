@@ -60,6 +60,7 @@ def get_query_result(query):
     db.close()
     return results
 
+
 """
 Calls for the results to be printed
 """
@@ -76,6 +77,7 @@ def print_error_query_results(query_result):
     for result in query_result['results']:
         print ('\t' + str(result[0]) + ':	' + str(result[1]) + '%')
 
+
 """
 Sets where the variables are stored.
 """
@@ -87,4 +89,3 @@ query3_result['results'] = get_query_result(query3)
 print_query_results(query1_result)
 print_query_results(query2_result)
 print_error_query_results(query3_result)
-
