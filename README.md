@@ -1,10 +1,10 @@
-#LOGS ANALYSIS PROJECT#
+#LOGS ANALYSIS PROJECT
 
 Hey everyone!
 
 So, this one is a bit of a doozy. This program reads a posgresql database via Python, and then prints out pieces of information based on the questions asked in the project.
 
-###So let's get started!###
+###So let's get started!
 
 In this repo, you'll find 3 files.
 
@@ -14,11 +14,19 @@ Next up, there's the questions.py file. Thats where the _magic_ happens!
 
 And finally there's the questions.txt file, which simply shows the output.
 
-###HOW TO USE THIS THING###
+###Setting Up The Project
+
+So, to begin, you need a database to access. We used newsdata.sql, however, any database will work. You enter the database name into the DB_NAME variable, so that the python program knows where to look.
+
+Once you do that, you're all set. Just make sure that the database and this python script are in the same directory, and you just run "python3 questions.py". 
+
+IF you want to use this program to run different queries or check a different database, you're going to want to check the below section. It will tell you what you need to know.
+
+###HOW TO USE THIS THING
 
 This script takes a database name, or DB_NAME, and that is the database that we are working on.
 
-After that, you input 3 queries. For this project, I was attempting to answer 3 questions 
+After that, you input 3 queries. For this program, I was attempting to answer 3 questions 
 using the database I was provided. 
 
 1. What are the three most popular articles of all time?
@@ -38,7 +46,7 @@ reflect that.
 
 Now, for some functions.
 
-####FUNCTIONS ARE GREAT DON'T @ ME####
+####FUNCTIONS ARE GREAT DON'T @ ME
 
 So, the first function ([def get_query_result(query))]) is super important. It saves us from having 
 to call the cursors three times here. Basically, all this function does is connect to the database, run
